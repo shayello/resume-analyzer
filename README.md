@@ -43,8 +43,10 @@ uvicorn app.main:app --reload
 ```resume-analyzer/
 
 ├── app/
-│    ├── main.py         # FastAPI app
-│    ├── analyzer.py     # Resume parsing & analysis logic
+│   ├── main.py                  ← FastAPI app
+│   ├── parser.py                ← extract_text_from_pdf() lives here
+│   ├── skill_matcher.py         ← match_skills() lives here
+│   └── ai_suggestions.py        ← get_resume_improvement_suggestion() lives here
 ├── requirements.txt
 ├── README.md
 └── .gitignore
