@@ -20,36 +20,35 @@ An AI-powered web app that analyzes resumes and recommends personalized job matc
 ## 🧑‍💻 Getting Started
 
 ### 1. Clone the Repo
--bash
+```bash
 git clone https://github.com/YOUR_USERNAME/resume-analyzer.git
 cd resume-analyzer
+```
 
 ### 2. Create Virtual Env & Install Dependencies
--bash
+```bash
 python -m venv venv
 source venv/bin/activate   # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
+```
 
 ### 3. Run the App
--bash
+```bash
 uvicorn app.main:app --reload
+```
 
 - Then open your browser to:  http://127.0.0.1:8000/docs
 
 ## Project Structure
-resume-analyzer/
+```resume-analyzer/
 
 ├── app/
-
-│     ├── main.py         # FastAPI app
-
-│     ├── analyzer.py     # Resume parsing & analysis logic
-
+│    ├── main.py         # FastAPI app
+│    ├── analyzer.py     # Resume parsing & analysis logic
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
+```
 
 🤝 Contributing
 Pull requests welcome! For major changes, please open an issue first to discuss what you’d like to change.
